@@ -1,0 +1,62 @@
+import { Carousel } from 'react-bootstrap';
+import React, {useState, useEffect} from "react";
+import {Card,Button} from 'antd';
+import axios from 'axios';
+import '../App.css'
+
+
+
+
+const {Meta} = Card;
+
+
+function BreakingNews() {
+
+    const [breakingnews, setbreakingnews] = useState ([]);
+
+    useEffect(() => {
+        const loadbreakingnews = async () => {
+        const response = await axios.get("https://newsapi.org/v2/everything?domains=wsj.com&apiKey=d8a14f5d0a7d45f395a26e95e34050b0 ");
+
+        setbreakingnews(response.data.articles);
+    };
+
+    loadbreakingnews();
+    }, []);
+
+    console.log('breakingnews', breakingnews);
+  return (
+    <div className="container" style={{width: '60%'}}>
+        <Carousel fade={true} pause={false}>
+            {breakingnews && breakingnews.map((item, index) => {
+                return(
+                    <Carousel.Item interval={4000} key={index}><a href={item.url} >
+<img
+className="d-block w-100"
+src={item.urlToImage}
+alt="First slide"
+/>
+<Carousel.Caption style={{ backgroundColor:'rgba(0, 0, 0, 0.500)', paddingLeft:'3%',textAlign:'left'}}>
+<p>{item.publishedAt}</p>
+<h1 style={{color:'white', fontWeight:'bold' }}>{item.title}</h1>
+
+</Carousel.Caption>
+</a>
+</Carousel.Item>
+
+
+                )
+            })}
+            
+        </Carousel>
+
+    </div>
+   
+  )
+
+
+}
+
+export default BreakingNews
+
+

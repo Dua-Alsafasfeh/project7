@@ -10,6 +10,7 @@ import Business from './Components/Business';
 
 
 
+
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
       <Route path='/Business' element={<Business/>}/>
     </Routes>
     </BrowserRouter>
+  
       <Footer/>
       
 
