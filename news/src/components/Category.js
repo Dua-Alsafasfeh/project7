@@ -69,12 +69,14 @@ function Category() {
                                         Sports journalism is a form of writing that reports on matters pertaining to sporting topics and competitions. Sports journalism was targeted to the social elite and transitioned into an integral part of the news business with newspapers having dedicated sports sections.
                                     </p>
                                     <footer>
+                                    <Link to="/Sport">
                                         <a className="btn btn-primary more" href="single.html">
                                             <div>More Details</div>
                                             <div>
                                                 <i className="ion-ios-arrow-thin-right" />
                                             </div>
                                         </a>
+                                    </Link>
                                     </footer>
                                 </div>
                             </div>
