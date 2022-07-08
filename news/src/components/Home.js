@@ -1,12 +1,12 @@
 import React from 'react';
 import Category from './Category';
-import Ads from './UserAds';
+// import Weather from './Weather';
 
 function Home(){
     return(
         <>
         <Category/>
-        <Ads/>
+        {/* <Weather/> */}
         </>
     )
 }

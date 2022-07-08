@@ -63,7 +63,6 @@ function Business() {
                                                 {item.description}
                                             </p>
                                             <footer>
-                                                <a href="#" class="love"><i class="ion-android-favorite-outline"></i> <div>273</div></a>
                                                 <a class="btn btn-primary more" href={item.url}>
                                                     <div>More</div>
                                                     <div><i class="ion-ios-arrow-thin-right"></i></div>

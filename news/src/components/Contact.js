@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 function Contact() {
 	return (
 		<>
-		<div>
   <div className="container">
     <div className="row">
       <div className="col-md-10 top">
@@ -95,10 +94,8 @@ function Contact() {
       </div>
     </div>
   </div>
-</div>
 
 		</>
 	)
 }
-
-export default Contact
+export default Contact;

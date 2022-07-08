@@ -280,7 +280,8 @@ a, .btn {
 }
 
 a {
-  color: #F73F52;
+  /* color: #F73F52; */
+  color: #000000;
 }
 a:hover, a:focus {
   color: #C8081C;
