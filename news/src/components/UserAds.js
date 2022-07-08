@@ -12,7 +12,7 @@ class Ads extends Component {
   }
 
   componentDidMount() {
-      axios.post('http://localhost/news_react/api-crud/php_crud/view.php')
+      axios.post('http://localhost/project7/php_crud/view.php')
       .then((data) => {
         this.setState({
           items: data.data,

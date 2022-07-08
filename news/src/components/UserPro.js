@@ -21,7 +21,7 @@ function Userpro() {
 
     const clickHandel =(event)=>{
         event.preventDefault();
-        axios.post('http://localhost/news_react/api-crud/php_crud/insert.php?&Title='+Title+'&Type='+Type+'&City='+City+'&Phone='+Phone+'&Des='+Des+'&img='+img+'&Date_Res='+Date_Res)
+        axios.post('http://localhost/project7/php_crud/insert.php?&Title='+Title+'&Type='+Type+'&City='+City+'&Phone='+Phone+'&Des='+Des+'&img='+img+'&Date_Res='+Date_Res)
         .then((data) => {
         })
         .catch((error) => {
