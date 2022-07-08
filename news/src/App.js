@@ -9,6 +9,7 @@ import Home from './Components/Home';
 import Business from './Components/Business';
 import About from './Components/About';
 import Contact from './Components/Contact';
+import News from './Components/News';
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
     <>
     <BrowserRouter>
     <Navbar/>
+ 
+  
+
     <Routes>
       <Route path='/Register' element={<Register/>}/>
       <Route path='/Login' element={<Login/>}/>
@@ -25,7 +29,10 @@ function App() {
       <Route path='/About' element={<About/>}/>
       <Route path='/Contact' element={<Contact/>}/>
     </Routes>
+
     </BrowserRouter>
+  
+ 
   
       <Footer/>
       
