@@ -280,8 +280,7 @@ a, .btn {
 }
 
 a {
-  /* color: #F73F52; */
-  color: #000000;
+  color: #F73F52;
 }
 a:hover, a:focus {
   color: #C8081C;
@@ -453,7 +452,9 @@ a.twitch {
 .badge-grey {
   background-color: #E7E7E7;
 }
-
+.top{
+  margin-top:-50%;
+}
 .for-mobile, .for-tablet {
   display: none !important;
 }
@@ -462,7 +463,7 @@ a.twitch {
   background-color: transparent;
   padding: 0;
   border: 0;
-  margin: 0;
+  margin-top: -50%;
 }
 .breadcrumb li {
   font-size: 12px;
@@ -531,7 +532,7 @@ header.primary {
   z-index: 1999;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 50%;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -572,10 +573,10 @@ header.primary.up nav.menu .dropdown-menu .dropdown-menu {
 
 section {
   padding-top: 20px;
-  /* padding-bottom: 40px; */
+  padding-bottom: 40px;
 }
 section.first {
-  /* padding-top: 240px; */
+  padding-top: 240px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -1392,13 +1393,28 @@ article .detail {
   display: -webkit-box;
   display: -moz-box;
 }
-
+.radius{
+  border-radius: 5%;
+}
+.my-custom-scrollbar {
+  height: 500px;
+  overflow: auto;
+}
+.ttop{
+  margin-top:-70% ;
+  margin-left: -15%;
+  margin-bottom: 10%
+}
+.padding1{
+  margin-top:5px;
+  text-align:left;
+}
 .article .inner {
   box-shadow: 0 1px 2px #ddd;
 }
 .article .padding {
-  padding: 15px;
-  padding-top: 0;
+  padding: 2px;
+  padding-top: 2px;
 }
 .article h2 {
   text-transform: capitalize;
@@ -2540,7 +2556,6 @@ aside .ads figcaption {
 .comments .media-left {
   width: 70px;
   height: 70px;
-  overflow: hidden;
 }
 .comments .media-body p {
   font-size: 14px;
@@ -2560,6 +2575,7 @@ aside .ads figcaption {
 }
 .comments .detail .link a {
   color: #F73F52;
+  
 }
 .comments .detail .time {
   color: #989898;
@@ -3193,6 +3209,9 @@ footer.footer .copyright div i {
   color: #E74C3C;
   padding: 0 3px;
 }
+.inner div img {
+  width:20vw;
+}
 /* footer.footer .article-mini {
   margin-bottom: 23px;
 } */
@@ -3576,12 +3595,15 @@ blockquote {
 .comments form {
   margin-top: 30px;
 }
-
+.teamtech{
+  margin-top:-100%;
+}
 .page {
   text-align: center;
+  margin-left: -5%;
 }
 .page .breadcrumb {
-  margin-top: 20px;
+  margin-top: -224%;
 }
 .page .page-title {
   margin: 0;
@@ -3620,7 +3642,7 @@ blockquote {
   text-align: center;
 }
 .page .question a {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 .page form.contact {
   margin-top: 30px;
