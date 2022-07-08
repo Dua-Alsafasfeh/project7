@@ -35,13 +35,8 @@ function Business() {
                     //     <a href={item.link} target='blank' rel="noopener noreferrer">
                     //         <Button type="primary" style={{marginTop: '10px'}}>Read More</Button>
                     //     </a>
-
-
                     // </Card>
-
                     <div key={index}>
-
-
                         <div class="row" >
                             <article class="col-md-12 article-list">
                                 {item.urlToImage && (

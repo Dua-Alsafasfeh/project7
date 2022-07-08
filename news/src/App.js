@@ -8,8 +8,6 @@ import Navbar from './Components/navbar';
 import Home from './Components/Home';
 import Business from './Components/Business';
 
-
-
 function App() {
   return (
     <>
