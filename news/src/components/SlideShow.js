@@ -24,6 +24,7 @@ function BreakingNews() {
 
     console.log('breakingnews', breakingnews);
     return (
+        <>
         <div className="container" style={{ width: '60%', margintop: '20em' }}>
             <Carousel fade={true} pause={false} className="slide">
                 {breakingnews && breakingnews.map((item, index) => {
@@ -49,6 +50,7 @@ function BreakingNews() {
             </Carousel>
 
         </div>
+        </>
 
     )
 

@@ -21,8 +21,16 @@ function App() {
         <Navbar />
         <Weather/>
         <TopNews/>
+        <hr className='container'
+  style={{
+    background: '#21325E',
+    color: '#21325E',
+    borderColor: '#21325E',
+    height: '3.5px',
+  }}
+/>
         <Ads/>
-        <Comment/>  
+        <Comment/>
         <Routes>
           <Route path='/Register' element={<Register />} />
           <Route path='/Login' element={<Login />} />
