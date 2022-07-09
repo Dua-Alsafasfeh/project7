@@ -1,6 +1,8 @@
 import axios from 'axios';
 import {useNavigate} from "react-router-dom";
 import React, { useState } from 'react'
+import '../style/register.css';
+
 const Login=()=>{
     let navigate = useNavigate();
 
@@ -37,12 +39,13 @@ const Login=()=>{
         })
     }
 
-
     return(
+        <>
+        <div className='regstyle'>
         <section className="login first grey">
                 <div className="container">
                     <div className="box-wrapper">
-                        <div className="box box-border">
+                        <div className="box box-border reg">
                             <div className="box-body">
                                 <h4>Login</h4>
                                 <form  onSubmit={submitForm}>
@@ -86,6 +89,8 @@ const Login=()=>{
                     </div>
                 </div>
             </section>
+            </div>
+            </>
         
     )
 }

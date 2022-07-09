@@ -1,6 +1,7 @@
 import { useState } from "react";
-import axios from 'axios'
+import axios from 'axios';
 import{useNavigate} from 'react-router-dom';
+import '../style/register.css';
  
 const Register=(props)=>{
 
@@ -44,10 +45,12 @@ const Register=(props)=>{
     }
 
     return(
+      <>
+      <div className="regstyle">
         <section className="login first grey">
         <div className="container">
           <div className="box-wrapper">
-            <div className="box box-border">
+            <div className="box box-border reg">
               <div className="box-body">
                 <h4>Register</h4>
                 <form  onSubmit={submitForm}>
@@ -98,6 +101,8 @@ const Register=(props)=>{
           </div>
         </div>
       </section>
+      </div>
+      </>
 
     )
 }
