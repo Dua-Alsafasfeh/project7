@@ -13,11 +13,13 @@ import News from './Components/News';
 import Ads from './Components/UserAds';
 import BreakingNews from './Components/SlideShow';
 import TopNews from './Components/TopNews';
+import Weather from './Components/Weather';
 function App() {
   return (
     <>
       <BrowserRouter>
         <Navbar />
+        <Weather/>
         <TopNews/>
         <Ads/>
         <Comment/>  
