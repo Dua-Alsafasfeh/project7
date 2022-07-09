@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Card, Button } from 'antd';
 import axios from 'axios';
 import '../App.css'
+import '../style/slide.css'
 
 const { Meta } = Card;
 
@@ -23,8 +24,8 @@ function BreakingNews() {
 
     console.log('breakingnews', breakingnews);
     return (
-        <div className="container" style={{ width: '60%' }}>
-            <Carousel fade={true} pause={false}>
+        <div className="container" style={{ width: '60%', margintop: '20em' }}>
+            <Carousel fade={true} pause={false} className="slide">
                 {breakingnews && breakingnews.map((item, index) => {
                     return (
                         <Carousel.Item interval={4000} key={index}><a href={item.url} >
@@ -35,7 +36,7 @@ function BreakingNews() {
                             />
                             <Carousel.Caption style={{ backgroundColor: 'rgba(0, 0, 0, 0.500)', paddingLeft: '3%', textAlign: 'left' }}>
                                 <p>{item.publishedAt}</p>
-                                <h1 style={{ color: 'white', fontWeight: 'bold' }}>{item.title}</h1>
+                                <h3 style={{ color: 'white', fontWeight: 'bold' }}>{item.title}</h3>
 
                             </Carousel.Caption>
                         </a>

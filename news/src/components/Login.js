@@ -1,17 +1,57 @@
-import React from 'react';
-function Login() {
-    return (
-        <>
-            <section className="login first grey">
+import axios from 'axios';
+import {useNavigate} from "react-router-dom";
+import React, { useState } from 'react'
+const Login=()=>{
+    let navigate = useNavigate();
+
+    const [user,setUser]=useState({email:'',password:''})
+
+    const handleChange=(e)=>{
+        setUser({...user, [e.target.name]: e.target.value});
+    }
+
+
+    const submitForm=(e)=>{
+        e.preventDefault();
+       const sendData = {
+
+            email:user.email,
+            password:user.password
+        }
+
+
+       // console.log(sendData);
+    
+        axios.post('https://localhost/registration/sssss.php',sendData)
+        .then((result)=>{
+         console.log(result,"show result");        
+         if(result.data.Status === 'Invalid') {
+        window.localStorage.setItem('email', result.data.email);
+        window.localStorage.setItem('password', (result.data.password));  
+        alert('Invalid User');
+        }
+        else {
+        navigate(`/dashboard`);
+        
+        }
+        })
+    }
+
+
+    return(
+        <section className="login first grey">
                 <div className="container">
                     <div className="box-wrapper">
                         <div className="box box-border">
                             <div className="box-body">
                                 <h4>Login</h4>
-                                <form>
+                                <form  onSubmit={submitForm}>
                                     <div className="form-group">
-                                        <label>Username</label>
-                                        <input type="text" name="username" className="form-control" />
+                                        <label>Email</label>
+                                        <input type="email" name="email" className="form-control" 
+                                        onChange={handleChange} value={user.email}
+                                        />
+
                                     </div>
                                     <div className="form-group">
                                         <label className="fw">
@@ -19,12 +59,19 @@ function Login() {
                                             <a href="forgot.html" className="pull-right">
                                                 Forgot Password?
                                             </a>
+
                                         </label>
-                                        <input type="password" name="password" className="form-control" />
+                                        <input type="password" name="password" className="form-control"
+                                        onChange={handleChange} value={user.password}                                  
+                                        />
                                     </div>
+                                    
                                     <div className="form-group text-right">
-                                        <button className="btn btn-primary btn-block">Login</button>
+                                    
+                                    <input type="submit" name="submit" className="btn btn-primary btn-block" value="Login"/>
+                                       
                                     </div>
+                                    
                                     <div className="form-group text-center">
                                         <span className="text-muted">Don't have an account?</span>{" "}
                                         <a href="register.html">Create one</a>
@@ -39,7 +86,8 @@ function Login() {
                     </div>
                 </div>
             </section>
-        </>
+        
     )
 }
+
 export default Login;

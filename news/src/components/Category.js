@@ -1,13 +1,14 @@
 import React from 'react';
 import {BrowseRoute, Route, Routes, Link} from 'react-router-dom';
-
+import '../style/category.css';
 function Category() {
     return (
         <>
-            <div className="line container">
+        <div className='catecontainer'>
+            <div className="linestyle line container">
                 <div>Today News</div>
             </div>
-            <div className="row container">
+            <div className="row container catestyle">
                 <div className="col-md-6 col-sm-6 col-xs-12">
                     <div className="row">
                         <article className="article col-md-12">
@@ -31,7 +32,7 @@ function Category() {
                                     <p>
                                         Business journalism is the part of journalism that tracks, records, analyzes and interprets the business, economic and financial activities and changes that take place in societies. Topics widely cover the entire purview of all commercial activities related to the economy.
                                     </p>
-                                    <footer>
+                                    <footer className='m-3'>
                                     <Link to="/Business">
                                         <a className="btn btn-primary more" href="single.html">
                                             <div>More Details</div>
@@ -66,10 +67,10 @@ function Category() {
                                         </a>
                                     </h2>
                                     <p>
-                                        Sports journalism is a form of writing that reports on matters pertaining to sporting topics and competitions. Sports journalism was targeted to the social elite and transitioned into an integral part of the news business with newspapers having dedicated sports sections.
+                                    Sports journalism is a form of writing that reports on matters pertaining to sporting topics and competitions. Sports journalism started in the early 1800s when it was targeted to the social elite and transitioned into an integral part of the news business with newspapers having dedicated sports sections.
                                     </p>
-                                    <footer>
-                                    <Link to="/News">
+                                    <footer className='m-3'>
+                                    <Link to="/Sport">
                                         <a className="btn btn-primary more" href="single.html">
                                             <div>More Details</div>
                                             <div>
@@ -83,6 +84,7 @@ function Category() {
                         </article>
                     </div>
                 </div>
+            </div>
             </div>
         </>
     )

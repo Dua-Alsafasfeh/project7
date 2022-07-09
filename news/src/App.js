@@ -11,13 +11,14 @@ import Contact from './Components/Contact';
 import Comment from './Components/Comment';
 import News from './Components/News';
 import Ads from './Components/UserAds';
-import Food from './Components/Food';
 import BreakingNews from './Components/SlideShow';
+import TopNews from './Components/TopNews';
 function App() {
   return (
     <>
       <BrowserRouter>
         <Navbar />
+        <TopNews/>
         <Ads/>
         <Comment/>  
         <Routes>
@@ -31,8 +32,7 @@ function App() {
           <Route path='/Contact' element={<Contact/>} />
         </Routes>
       </BrowserRouter>
-      <BreakingNews/>
-      <Food/>
+     
       <Footer />
     </>
   );

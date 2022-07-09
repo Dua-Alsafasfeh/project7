@@ -1,34 +1,93 @@
-import React from 'react';
+import { useState } from "react";
+import axios from 'axios'
+import{useNavigate} from 'react-router-dom';
+ 
+const Register=(props)=>{
 
-function Register() {
-  return (
-    <>
-      <section className="login first grey">
+    let history = useNavigate(); // Use for Navigate on Previous
+    const [data, setData]=useState({
+        first_name:"",
+        last_name:"",
+        email:"",
+        password:""
+    })
+
+    const handleChange=(e)=>{
+        setData({ ...data, [e.target.name]: e.target.value }); 
+
+        //console.log(data)
+    }
+   
+    const submitForm=(e)=>{
+        e.preventDefault(); 
+       const sendData = {
+            first_name:data.first_name,
+            last_name:data.last_name,
+            email:data.email,
+            password:data.password
+
+        }
+
+        console.log(sendData,"data");
+
+        axios.post('https://localhost/project7/php_crud/insert.php',sendData)
+        .then((result)=>{
+            if (result.data.Status === 'Invalid') { 
+          alert('Invalid User');  
+            }
+        else  {
+           //props.history.push('/Dashboard')  
+           //props.history.push('/Dashboard') Redirect
+           history(`/Login`);
+        }
+      })  
+    }
+
+    return(
+        <section className="login first grey">
         <div className="container">
           <div className="box-wrapper">
             <div className="box box-border">
               <div className="box-body">
                 <h4>Register</h4>
-                <form>
+                <form  onSubmit={submitForm}>
                   <div className="form-group">
-                    <label>Name</label>
-                    <input type="text" name="name" className="form-control" />
+                    <label>First Name</label>
+                    <input type="text" name="first_name" className="form-control"
+                     onChange={handleChange} value={data.first_name}
+                    />
                   </div>
+
+
+                  <div className="form-group">
+                    <label>Last Name</label>
+                    <input type="text" name="last_name" className="form-control" 
+                    onChange={handleChange} value={data.last_name}
+                    />
+                  </div>
+
+
                   <div className="form-group">
                     <label>Email</label>
-                    <input type="email" name="email" className="form-control" />
+                    <input type="email" name="email" className="form-control"
+                    onChange={handleChange} value={data.email}            
+                    />
                   </div>
-                  <div className="form-group">
-                    <label>Username</label>
-                    <input type="text" name="username" className="form-control" />
-                  </div>
+
+
                   <div className="form-group">
                     <label className="fw">Password</label>
-                    <input type="password" name="password" className="form-control" />
+                    <input type="password" name="password" className="form-control"
+                     onChange={handleChange} value={data.password}
+                    />
                   </div>
+
+
                   <div className="form-group text-right">
-                    <button className="btn btn-primary btn-block">Register</button>
+                  <input type="submit" name="submit" value="Register" className="btn btn-primary btn-block" />
                   </div>
+
+
                   <div className="form-group text-center">
                     <span className="text-muted">Already have an account?</span>{" "}
                     <a href="login.html">Login</a>
@@ -40,7 +99,7 @@ function Register() {
         </div>
       </section>
 
-    </>
-  )
+    )
 }
+
 export default Register;

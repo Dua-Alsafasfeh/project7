@@ -29,7 +29,7 @@ function Comment(){
     <>
     <div class="d-flex justify-content-center align-items-center float-lg-right mr-5">
 
-      <div class="card p-3">
+      <div class="card p-5">
     <div style={styles.container}>
       <h2> Ratings us </h2>
       <div style={styles.stars}>

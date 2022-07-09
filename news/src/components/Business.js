@@ -1,7 +1,9 @@
+import '../style/cateapi.css';
 import React, { useState, useEffect } from "react";
 import { Card, Button } from 'antd';
 import axios from 'axios';
 const { Meta } = Card;
+
 
 
 function Business() {
@@ -20,7 +22,7 @@ function Business() {
     console.log('business', business);
     return (
 
-        <div className="container-fluid" style={{ width: '60%' }}>
+        <div className="container business" style={{ width: '60%' }}>
             <div class="line top">
                 <div>Business News</div>
             </div>
@@ -53,7 +55,7 @@ function Business() {
                                         <div class="details">
                                             <div class="detail">
                                                 <div class="category">
-                                                    <a href="#">News</a>
+                                                    <a href="#">Business</a>
                                                 </div>
                                                 <div class="time">{item.publishedAt}</div>
                                                 {/* <div class="time">December 19, 2016</div> */}

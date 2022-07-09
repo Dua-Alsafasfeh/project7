@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {Card,Button} from 'antd';
 import axios from 'axios';
+import '../style/cateapi.css'
 
 
 
@@ -24,7 +25,7 @@ function News() {
 
     console.log('news', news);
   return (
-    <div className="container-fluid" style={{width: '60%'}}>
+    <div className="container sport" style={{width: '60%'}}>
                <div class="line top">
             <div>Sport's News</div>
         </div>
@@ -46,7 +47,7 @@ function News() {
      <div  key={index}>
                
             
-        <div class="row"  >
+        <div class="row">
             <article class="col-md-12 article-list">
             {item.image_url && (
                 <div class="inner">
@@ -62,7 +63,7 @@ function News() {
                     <div class="details">
                         <div class="detail">
                             <div class="category">
-                                <a href="#">News</a>
+                                <a href="#">Sport</a>
                             </div>
                             <div class="time">{item.pubDate}</div>
                                  {/* <div class="time">December 19, 2016</div> */}
@@ -72,7 +73,6 @@ function News() {
                         {item.description}
                         </p>
                         <footer>
-                            <a href="#" class="love"><i class="ion-android-favorite-outline"></i> <div>273</div></a>
                             <a class="btn btn-primary more" href={item.link}>
                                 <div>More</div>
                                 <div><i class="ion-ios-arrow-thin-right"></i></div>

@@ -26,7 +26,7 @@ class Ads extends Component {
 
   render() {
     return (
-      <div class="my-custom-scrollbar my-custom-scrollbar-primary mb-5">
+      <div class="my-custom-scrollbar my-custom-scrollbar-primary mb-5 mr-5">
      <div class="mr-5">
         {this.state.items.map((ads) => {
           return(

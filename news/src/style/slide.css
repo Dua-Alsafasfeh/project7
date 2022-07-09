@@ -1,0 +1,8 @@
+.carousel-indicators{
+  display: none !important;
+}
+.slide{
+    margin-top: -526px;
+    width: 116%;
+    margin-left: -28%;
+  }

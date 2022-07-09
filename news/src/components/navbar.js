@@ -76,11 +76,6 @@ function Navbar() {
                                             <a href="category.html">Sport</a>
                                         </li>
                                     </Link>
-                                    <Link to="/Financial" className='linkdrop'>
-                                        <li className="dropdown magz-dropdown">
-                                            <a href="#">Financial</a>
-                                        </li>
-                                    </Link>
                                 </ul>
                             </li>
                             <ul className="nav-icons" id="m1">
@@ -112,11 +107,6 @@ function Navbar() {
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="icon ion-chatbox" /> Comments
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
                                                 <i className="icon ion-log-out" /> Logout
                                             </a>
                                         </li>
@@ -128,7 +118,7 @@ function Navbar() {
                 </div>
             </nav>
             {/* ////////////////////small categories//////////// */}
-            <div className="firstbar">
+            {/* <div className="firstbar">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-2 col-sm-12"></div>
@@ -166,44 +156,8 @@ function Navbar() {
                             </form>
                         </div>
                     </div>
-                    <div className="container mt-5">
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div
-                                    className="d-flex justify-content-between align-items-center breaking-news "
-                                    style={{ backgroundColor: "#252e38", color: "aliceblue", fontSize: "1.5em" }}
-                                >
-                                    <div className="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news">
-                                        <span className="d-flex align-items-center">&nbsp; Global News</span>
-                                    </div>
-                                    <marquee
-                                        className="news-scroll"
-                                        behavior="scroll"
-                                        direction="left"
-                                        onmouseover="this.stop();"
-                                        onmouseout="this.start();"
-                                    >
-                                        {" "}
-                                        <a href="#">
-                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                            qui officia deserunt mollit anim id est laborum.{" "}
-                                        </a>{" "}
-                                        <span className="dot" />{" "}
-                                        <a href="#">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut{" "}
-                                        </a>{" "}
-                                        <span className="dot" />{" "}
-                                        <a href="#">
-                                            Duis aute irure dolor in reprehenderit in voluptate velit esse{" "}
-                                        </a>
-                                    </marquee>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
+            </div> */}
 
         </>
     )

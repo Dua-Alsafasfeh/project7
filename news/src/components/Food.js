@@ -43,8 +43,8 @@ function Food() {
 
 <section className="best-of-the-week">
   <div className="container">
-    <h1>
-      <div className="text"> Search For Food recipes</div>
+    <h1 className="line">
+      <div className="text "> Search For Food recipes</div>
       <div className="carousel-nav" id="best-of-the-week-nav">
         {/* <div className="prev">
           <i className="ion-ios-arrow-left" />
@@ -56,7 +56,7 @@ function Food() {
     </h1>
 
     {alert !== "" && <Alert alert={alert} />}
-<form className="search"  onSubmit={onSubmit} style={{ height: '100%',width:'30%' }}>
+<form className="search offset-3"  onSubmit={onSubmit} style={{ height: '100%',width:'40%' }}>
 <div className="form-group">
     <div className="input-group">
       <input type="text" name="q" className="form-control" onChange={onChange} value={query} placeholder="Search Food" />
