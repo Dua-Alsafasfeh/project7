@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <>
             <nav className="menu">
-                <div className="container-sluied">
+                <div className="container-fluid">
                     {/* <div className="brand">
                         <Link to="/Home"><a href="#">
                             <img src="images/logo.png" alt="Magz Logo" />
@@ -38,24 +38,24 @@ function Navbar() {
                                 <span>
                                     <Link to="/Home">
                                         <a href="index.html">
-                                            <img src="images/logo.png" alt="Magz Logo" width="33%" />
+                                            <img src="images/logo.png" alt="Magz Logo" width="37%" />
                                         </a>
                                     </Link>
                                 </span>
                             </li>
                             <li className="dropdown magz-dropdown" id="center">
                                 <Link to="/Home">
-                                    <a href="category.html">Home </a>
+                                    <a className='h4 font-weight-bold' href="category.html">Home </a>
                                 </Link>
                             </li>
                             <li className="dropdown magz-dropdown">
                                 <Link to="/About">
-                                    <a href="category.html">About Us </a>
+                                    <a className='h4 font-weight-bold' href="category.html">About Us </a>
                                 </Link>
                             </li>
                             <li className="dropdown magz-dropdown">
                                 <Link to="/Contact">
-                                    <a href="category.html">Contact Us </a>
+                                    <a className='h4 font-weight-bold' href="category.html">Contact Us </a>
                                 </Link>
                             </li>
                             <li className="dropdown magz-dropdown">
@@ -81,7 +81,7 @@ function Navbar() {
                             <ul className="nav-icons" id="m1">
                                 <Link to='/Register' className='linkmenu'>
                                     <li className='menutab'>
-                                        <a href="register.html">
+                                        <a className='h4 font-weight-bold' href="register.html">
                                             <span className="ion-person-add" />
                                             &nbsp;Register
                                         </a>
@@ -89,14 +89,14 @@ function Navbar() {
                                 </Link>
                                 <Link to='/Login' className='linkmenu'>
                                     <li className='menutab'>
-                                        <a href="login.html">
+                                        <a className='h4 font-weight-bold' href="login.html">
                                             <i className="ion-person" />
                                             &nbsp;Login
                                         </a>
                                     </li>
                                 </Link>
                                 <li className="dropdown magz-dropdown">
-                                    <a href="#">
+                                    <a href="#" className='font-weight-bold'>
                                         User Name <i className="ion-ios-arrow-right" />
                                     </a>
                                     <ul className="dropdown-menu">
