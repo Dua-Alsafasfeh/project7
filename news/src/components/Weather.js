@@ -48,12 +48,15 @@ function Weather() {
                                 {weather && weather.map((item, index) => {
                                     return (
                                         <>
-                                            <a href={item.datetime} key={index}>
+                                            <span key={index}>
+                                            <span className="iconify-inline weathericon" data-icon="fluent:weather-cloudy-48-regular"/>
+                                            {" "}
+                                                {item.datetime}{" | "}
                                                 {item.datetime} {" | "}
                                                 {item.conditions} {" | "}
                                                 {item.tempmin}°C / {item.tempmax}°C
-                                            </a>{" "}
-                                            <span className="dot bg-warning" />{" "}
+                                            </span>{" "}
+                                            {/* <span className="dot bg-warning" />{" "} */}
                                         </>
                                     )
 

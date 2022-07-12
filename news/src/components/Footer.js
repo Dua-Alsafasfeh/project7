@@ -32,17 +32,21 @@ function Footer() {
             <div className="right" />
           </h1>
           <div className="block-body ">
-          {/* <Link to="/Home"> */}
+          <Link to="/Home">
             <a href="page.html" className="btn btn-magz white">
               Home <i className="ion-ios-arrow-thin-right" />
             </a>
-            {/* </Link> */}
+            </Link>
+            <Link to="/About">
             <a href="page.html" className="btn btn-magz white">
               About Us <i className="ion-ios-arrow-thin-right" />
             </a>
+            </Link>
+            <Link to="/Contact">
             <a href="page.html" className="btn btn-magz white">
               Contact Us <i className="ion-ios-arrow-thin-right" />
             </a>
+            </Link>
           </div>
           <div className="line" />
           <h1 className="block-title">
@@ -52,10 +56,14 @@ function Footer() {
           <div className="block-body ">
             <ul className="tags">
               <li>
+              <Link to="/Business">
                 <a href="#">Buisness</a>
+                </Link>
               </li>
               <li>
+              <Link to="/Sport">
                 <a href="#">Sport</a>
+              </Link>
               </li>
             </ul>
           </div>
@@ -68,7 +76,7 @@ function Footer() {
             <p>Follow us and stay in touch to get the latest news</p>
             <ul className="social trp">
               <li>
-                <a href="#" className="facebook">
+                <a href="https://www.facebook.com/cnninternational" target={'_blank'} className="facebook">
                   <svg>
                     <rect width={0} height={0} />
                   </svg>
@@ -76,7 +84,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="twitter">
+                <a href="https://twitter.com/cnni" target={'_blank'} className="twitter">
                   <svg>
                     <rect width={0} height={0} />
                   </svg>
@@ -84,7 +92,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="youtube">
+                <a href="https://www.youtube.com/aljazeerachannel" target={'_blank'} className="youtube">
                   <svg>
                     <rect width={0} height={0} />
                   </svg>
@@ -92,39 +100,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="googleplus">
-                  <svg>
-                    <rect width={0} height={0} />
-                  </svg>
-                  <i className="ion-social-googleplus" />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="instagram">
-                  <svg>
-                    <rect width={0} height={0} />
-                  </svg>
-                  <i className="ion-social-instagram-outline" />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="tumblr">
-                  <svg>
-                    <rect width={0} height={0} />
-                  </svg>
-                  <i className="ion-social-tumblr" />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="dribbble">
-                  <svg>
-                    <rect width={0} height={0} />
-                  </svg>
-                  <i className="ion-social-dribbble" />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="linkedin">
+                <a href="https://www.linkedin.com/company/asharqnews/" target={'_blank'} className="linkedin">
                   <svg>
                     <rect width={0} height={0} />
                   </svg>
@@ -132,19 +108,11 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="skype">
+                <a href="https://www.instagram.com/aljazeera.net/" target={'_blank'} className="instagram">
                   <svg>
                     <rect width={0} height={0} />
                   </svg>
-                  <i className="ion-social-skype" />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="rss">
-                  <svg>
-                    <rect width={0} height={0} />
-                  </svg>
-                  <i className="ion-social-rss" />
+                  <i className="ion-social-instagram-outline" />
                 </a>
               </li>
             </ul>
