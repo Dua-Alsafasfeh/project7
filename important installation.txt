@@ -8,4 +8,3 @@ npm i install
 6.npm install react-icons
 7.npm install react@latest react-dom@latest
 8.npm i @emailjs/browser
-
