@@ -113,7 +113,7 @@ function Login(){
                                     
                                     <div className="form-group text-right">
                                     
-                                    <button type="" className="btn btn-block " style={{backgroundColor: '#FDBE33'}} onClick={handelLog}>Login</button> 
+                                    <button type="" className="btn btn-block btn-primary" onClick={handelLog}>Login</button> 
                                        
                                     </div>
                                     
