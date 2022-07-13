@@ -65,6 +65,16 @@ function Footer() {
                 <a href="#">Sport</a>
               </Link>
               </li>
+              <li>
+              <Link to="/health">
+                <a href="#">Health</a>
+              </Link>
+              </li>
+              <li>
+              <Link to="/tech">
+                <a href="#">Technology</a>
+              </Link>
+              </li>
             </ul>
           </div>
         </div>

@@ -15,6 +15,8 @@ import BreakingNews from './Components/SlideShow';
 import TopNews from './Components/TopNews';
 import Weather from './Components/Weather';
 import UserPro from './Components/UserPro';
+import Tech from './Components/Tech';
+import Health from './Components/Health';
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
           <Route path='/Home' element={<Home />} />
           <Route path='/' element={<Home />} />
           <Route path='/Business' element={<Business />} />
+          <Route path='/Health' element={<Health />} />
+          <Route path='/Tech' element={<Tech />} />
           <Route path='/Sport' element={<News />} />
           <Route path='/About' element={<About/>} />
           <Route path='/Contact' element={<Contact/>} />

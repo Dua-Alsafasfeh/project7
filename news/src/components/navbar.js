@@ -76,6 +76,16 @@ function Navbar() {
                                             <a href="category.html">Sport</a>
                                         </li>
                                     </Link>
+                                    <Link to="/health" className='linkdrop'>
+                                        <li>
+                                            <a href="category.html">Health</a>
+                                        </li>
+                                    </Link>
+                                    <Link to="/tech" className='linkdrop'>
+                                        <li>
+                                            <a href="category.html">Technology</a>
+                                        </li>
+                                    </Link>
                                 </ul>
                             </li>
                             <ul className="nav-icons" id="m1">
