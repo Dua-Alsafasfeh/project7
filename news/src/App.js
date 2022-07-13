@@ -14,6 +14,8 @@ import Ads from './Components/UserAds';
 import BreakingNews from './Components/SlideShow';
 import TopNews from './Components/TopNews';
 import Weather from './Components/Weather';
+import UserPro from './Components/UserPro';
+
 function App() {
   return (
     <>
@@ -40,6 +42,7 @@ function App() {
           <Route path='/Sport' element={<News />} />
           <Route path='/About' element={<About/>} />
           <Route path='/Contact' element={<Contact/>} />
+          <Route path='/MyAccount' element={<UserPro/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style/about.css';
+import { BrowseRoute, Route, Routes, Link } from 'react-router-dom';
 function About() {
   return (
     <div className='aboutstyle'>
@@ -36,9 +37,11 @@ function About() {
                 </p>
                 <div className="question">
                   Have a question?{" "}
+                  <Link to="/Contact">
                   <a href="#" className="btn btn-primary">
                     Contact Us
                   </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -46,7 +49,7 @@ function About() {
         </div>
 
       </section>
-      <div classname="photostyle" >
+      {/* <div classname="photostyle" >
         <section className="team text-center teamtech">
           <div className="container teamimg">
             <div className="header my-5">
@@ -125,7 +128,7 @@ function About() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
     </div>
 

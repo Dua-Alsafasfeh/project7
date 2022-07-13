@@ -101,9 +101,11 @@ function Navbar() {
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li>
+                                        <Link to="/MyAccount">
                                             <a href="#">
                                                 <i className="icon ion-person" /> My Account
                                             </a>
+                                            </Link>
                                         </li>
                                         <li>
                                             <a href="#">

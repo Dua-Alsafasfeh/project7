@@ -71,7 +71,7 @@ function Comment(){
 <div class="align-items-center">
 
       <div class="mt-5 d-flex justify-content-between align-items-center">
-            <h5 class="review-stat">Busniess News</h5>
+            <h5 class="review-stat">Business News</h5>
             <div class="small-ratings ml-5">
                 <i style={{color:'#FFBA5A'}} class="fa fa-star rating-color"></i>
                 <i style={{color:'#FFBA5A'}} class="fa fa-star rating-color"></i>
@@ -82,7 +82,7 @@ function Comment(){
             </div>
 
         <div class="mt-1 d-flex justify-content-between align-items-center">
-            <h5 class="review-stat">Spost News</h5>
+            <h5 class="review-stat">Sport News</h5>
             <div class="small-ratings ml-5 ">
                 <i style={{color:'#FFBA5A'}} class="fa fa-star rating-color"></i>
                 <i style={{color:'#FFBA5A'}} class="fa fa-star rating-color"></i>
@@ -118,7 +118,7 @@ function Comment(){
         
         
         <div class="mt-1 d-flex justify-content-between align-items-center">
-            <h5 class="review-stat">Pastrol</h5>
+            <h5 class="review-stat">Communication</h5>
             <div class="small-ratings ml-5">
                 <i style={{color:'#FFBA5A'}} class="fa fa-star rating-color"></i>
                 <i style={{color:'#FFBA5A'}} class="fa fa-star rating-color"></i>

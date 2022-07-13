@@ -3,9 +3,7 @@ import { Card, Button } from 'antd';
 import axios from 'axios';
 import '../style/weather.css';
 
-
 const { Meta } = Card;
-
 
 function Weather() {
 
@@ -59,8 +57,6 @@ function Weather() {
                                             {/* <span className="dot bg-warning" />{" "} */}
                                         </>
                                     )
-
-
                                 })}
                             </marquee>
                         </div>
@@ -72,5 +68,4 @@ function Weather() {
         </>
     )
 }
-
 export default Weather;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../style/userpro.css';
 
 function Userpro() {
 
@@ -30,8 +31,8 @@ function Userpro() {
     }
     return (
         <div >
-        <div class="row py-2 px-2 ttop">
-            <div class="col-md-6 mx-auto">
+        <div class="row py-1 px-1 ttop">
+            <div class="col-md-9 mx-auto">
                 <div class="bg-white shadow rounded overflow-hidden">
                     <div class="px-4 pt-0 pb-4 cover">
                         <h1>Account</h1>
@@ -83,8 +84,8 @@ function Userpro() {
                     </div>
                     <div class="row  text-left ml-1">
                         <div class="form-group flex-row d-flex"> 
-                            <label class="form-control-label px-3">Image<span class="text-danger"> *</span></label> 
-                                <input type="File" id="img" name="img" onChange={imgHandel}/> 
+                            <label class="form-control-label px-3">Add Link for Image<span class="text-danger"> *</span></label> 
+                                <input type="Text" id="img" name="img" onChange={imgHandel}/> 
                         </div>
 
                         <div class="form-group  flex-row d-flex "> 
@@ -105,7 +106,7 @@ function Userpro() {
                         </div>
                     </div>
                     <div class="row " >
-                        <div class="form-group col-md-12"> <button type="submit" onClick={clickHandel} class="btn btn-primary ">Add advertisement</button> </div>
+                        <div class="form-group col-md-12"> <button type="submit" onClick={clickHandel} class="btn btn-primary ">Add Advertisment</button> </div>
                     </div>
                 </form>
 </div>
