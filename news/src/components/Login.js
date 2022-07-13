@@ -16,6 +16,8 @@ function Login(){
       axios.get(`http://localhost/project7/userphp/readuser.php`)
           .then((response) => {
               setAPIData(response.data);
+              sessionStorage.setItem("id", response.data);
+              let id= sessionStorage.getItem("id");
               console.log(response.data,"res.data")
           })
   }, [])

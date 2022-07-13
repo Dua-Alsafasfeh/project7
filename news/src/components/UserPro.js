@@ -46,10 +46,10 @@ function Userpro() {
     return (
         <div >
         <div class="row py-1 px-1 ttop">
-            <div class="col-md-9 mx-auto">
+            <div class="col-md-6 mx-auto">
                 <div class="bg-white shadow rounded overflow-hidden">
                     <div class="px-4 pt-0 pb-4 cover">
-                        <h1>Account</h1>
+                        {/* <h1>Account</h1>
                         <div class="media align-items-end profile-head">
                             <div class="profile mr-3">
                                 <img src="https://static.vecteezy.com/system/resources/previews/002/400/532/original/young-happy-businessman-character-avatar-wearing-business-outfit-isolated-free-vector.jpg" alt="..." width="130" class="rounded mb-2 img-thumbnail" />
@@ -58,16 +58,16 @@ function Userpro() {
                                 <h4 class="mt-0 mb-0">Mark Williams</h4>
                                 <p class="small mb-4"> <i class="fas fa-map-marker-alt mr-2"></i>New York</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
-
+{/* 
                     <div class="px-4 py-3">
                         <h5 class="mb-0">About</h5>
                         <div class="p-4 rounded shadow-sm bg-light"> <p class="font-italic mb-0">Web Developer</p>
                             <p class="font-italic mb-0">Lives in New York</p>
                             <p class="font-italic mb-0">Photographer</p>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div class="py-4 px-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">

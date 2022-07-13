@@ -113,7 +113,7 @@ function Navbar() {
                                         <li>
                                         <Link to="/MyAccount">
                                             <a href="#">
-                                                <i className="icon ion-person" /> My Account
+                                                <i className="icon ion-person" /> My Adds
                                             </a>
                                             </Link>
                                         </li>
