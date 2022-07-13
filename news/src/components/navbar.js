@@ -90,7 +90,7 @@ function Navbar() {
                             </li>
                             <ul className="nav-icons" id="m1">
                                 <Link to='/Register' className='linkmenu'>
-                                    <li className='menutab'>
+                                    <li className='menutab' id="hideloginmenu" style={{display:""}}>
                                         <a className='h4 font-weight-bold' href="register.html">
                                             <span className="ion-person-add" />
                                             &nbsp;Register
@@ -98,14 +98,14 @@ function Navbar() {
                                     </li>
                                 </Link>
                                 <Link to='/Login' className='linkmenu'>
-                                    <li className='menutab'>
+                                    <li className='menutab' id="hideloginmenu" style={{display:""}}>
                                         <a className='h4 font-weight-bold' href="login.html">
                                             <i className="ion-person" />
                                             &nbsp;Login
                                         </a>
                                     </li>
                                 </Link>
-                                <li className="dropdown magz-dropdown" id="loginmenu" style={{display:"none"}}>
+                                <li className="dropdown magz-dropdown" id="showloginmenu" style={{display:""}}>
                                     <a href="#" className='font-weight-bold'>
                                         User Name <i className="ion-ios-arrow-right" />
                                     </a>
@@ -118,9 +118,11 @@ function Navbar() {
                                             </Link>
                                         </li>
                                         <li>
+                                            <Link to="/">
                                             <a href="#">
                                                 <i className="icon ion-log-out" /> Logout
                                             </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>

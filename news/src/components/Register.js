@@ -137,8 +137,9 @@ export default class UserForm extends Component {
                 <form id='regForm' className="d" onSubmit={this.onSubmit} noValidate>
                   <div className="form-group">
                     <label>Name</label>
+                    <br/>
                     <input type="text"
-                      className={isError.name.length > 0 ? "is-invalid form-control" : "form-control"}
+                      className={isError.name.length > 0 ? "is-invalid " : ""}
                       name="name"
                       onChange={this.formValChange}
                     />
@@ -150,8 +151,9 @@ export default class UserForm extends Component {
 
                   <div className="form-group">
                     <label>Email</label>
+                    <br/>
                     <input type="email"
-                      className={isError.email.length > 0 ? "is-invalid form-control" : "form-control"}
+                      className={isError.email.length > 0 ? "is-invalid " : ""}
                       name="email"
                       onChange={this.formValChange}
                     />
@@ -163,8 +165,9 @@ export default class UserForm extends Component {
 
                   <div className="form-group">
                     <label>Phone</label>
+                    <br/>
                     <input type="number"
-                      className={isError.phone.length > 0 ? "is-invalid form-control" : "form-control"}
+                      className={isError.phone.length > 0 ? "is-invalid " : ""}
                       name="phone"
                       onChange={this.formValChange}
                     />
@@ -177,8 +180,9 @@ export default class UserForm extends Component {
 
                   <div className="form-group">
                     <label className="fw">Password</label>
+                    <br/>
                     <input type="password"
-                      className={isError.pass.length > 0 ? "is-invalid form-control" : "form-control"}
+                      className={isError.pass.length > 0 ? "is-invalid " : ""}
                       name="pass"
                       onChange={this.formValChange}
                     />
