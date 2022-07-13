@@ -1,3 +1,4 @@
+import { BrowseRoute, Route, Routes, Link } from 'react-router-dom';
 import axios from 'axios';
 import {useNavigate} from "react-router-dom";
 import React, { useState } from 'react'
@@ -59,9 +60,9 @@ const Login=()=>{
                                     <div className="form-group">
                                         <label className="fw">
                                             Password
-                                            <a href="forgot.html" className="pull-right">
+                                            {/* <a href="forgot.html" className="pull-right">
                                                 Forgot Password?
-                                            </a>
+                                            </a> */}
 
                                         </label>
                                         <input type="password" name="password" className="form-control"
@@ -77,12 +78,15 @@ const Login=()=>{
                                     
                                     <div className="form-group text-center">
                                         <span className="text-muted">Don't have an account?</span>{" "}
-                                        <a href="register.html">Create one</a>
+                                        <Link to="/Register">
+                                        <a href="register.html">Register Now</a>
+                                        </Link>
+                                        
                                     </div>
-                                    <div className="title-line">or</div>
+                                    {/* <div className="title-line">or</div>
                                     <a href="#" className="btn btn-social btn-block facebook">
                                         <i className="ion-social-facebook" /> Login with Facebook
-                                    </a>
+                                    </a> */}
                                 </form>
                             </div>
                         </div>

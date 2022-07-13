@@ -12,6 +12,7 @@ const Contact = () => {
 
     emailjs.sendForm('service_2qdh9jb', 'template_g2qjhx4', form.current, 'FygekewmDWaC0As1M')
       .then((result) => {
+        alert("thank you for conact us");
         console.log(result.text);
         console.log("message sent");
         e.target.reset();

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from 'axios';
 import{useNavigate} from 'react-router-dom';
+import { BrowseRoute, Route, Routes, Link } from 'react-router-dom';
 import '../style/register.css';
  
 const Register=(props)=>{
@@ -93,7 +94,9 @@ const Register=(props)=>{
 
                   <div className="form-group text-center">
                     <span className="text-muted">Already have an account?</span>{" "}
+                    <Link to="/Login">
                     <a href="login.html">Login</a>
+                    </Link>
                   </div>
                 </form>
               </div>
