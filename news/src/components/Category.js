@@ -93,7 +93,7 @@ function Category() {
                                 <div className="inner">
                                     <figure>
                                         <a href="single.html">
-                                            <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sample Article" />
+                                            <img src="https://static.politico.com/76/00/5360d78146278d12e90379cdbfb5/https-delivery.gettyimages.com/downloads/1238834853" alt="Sample Article" />
                                         </a>
                                     </figure>
                                     <div className="padding">
@@ -130,7 +130,7 @@ function Category() {
                                 <div className="inner">
                                     <figure>
                                         <a href="single.html">
-                                            <img src="https://images.pexels.com/photos/718952/pexels-photo-718952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sample Article" />
+                                            <img src="https://www.digitaltrends.com/wp-content/uploads/2022/06/ios-16-beta-iphone13-3.jpg?p=1" />
                                         </a>
                                     </figure>
                                     <div className="padding">
