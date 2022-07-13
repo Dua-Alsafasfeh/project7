@@ -204,7 +204,7 @@ export default class UserForm extends Component {
           </div>
         </div>
       </section>
-      </div>
+    </div>
 
     )
   }

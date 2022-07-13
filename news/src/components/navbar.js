@@ -105,7 +105,7 @@ function Navbar() {
                                         </a>
                                     </li>
                                 </Link>
-                                <li className="dropdown magz-dropdown">
+                                <li className="dropdown magz-dropdown" id="loginmenu" style={{display:"none"}}>
                                     <a href="#" className='font-weight-bold'>
                                         User Name <i className="ion-ios-arrow-right" />
                                     </a>
