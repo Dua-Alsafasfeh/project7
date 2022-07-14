@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import RecipeDetails from "./RecipeDetails";
+// import '../style/food.css';
 
 const Recipe = ({ recipe }) => {
   const [show, setShow] = useState(false);
@@ -15,12 +16,12 @@ const Recipe = ({ recipe }) => {
     //   <button onClick={() => setShow(!show)}>Ingredients</button>
     //   {show && <RecipeDetails ingredients={ingredients} />}
 
-<>
-      <article className="article" style={{ display:"block", padding:'12px',height: '20%',width:'20%'}}>
+    <>
+      <article className="article" style={{ display: "block", padding: '12px', height: '20%', width: '20%' }}>
         <div className="inner">
           <figure>
             <a href={url}>
-              <img src={image} alt={label}  style={{ height: '90%',width:'90%',}}/>
+              <img src={image} alt={label} style={{ height: '90%', width: '90%', }} />
             </a>
           </figure>
           <div className="padding">
@@ -30,10 +31,10 @@ const Recipe = ({ recipe }) => {
                 <a href={url} target="_blank" rel="noopener noreferrer">Read more</a>
               </div>
             </div>
-            <h2>
-              <a  onClick={() => setShow(!show)}>Ingredients</a>
-              {show && <RecipeDetails ingredients={ingredients} />}
+            {/* <h2 >
+              <a onClick={() => setShow(!show)}>Ingredients</a>
             </h2>
+            <h6>{show && <RecipeDetails ingredients={ingredients} />}</h6> */}
           </div>
         </div>
       </article>

@@ -1223,8 +1223,8 @@ section.search .search-result {
 
 .firstbar {
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
   width: 100%;
   background-color: #FFFFFF;
 }
@@ -1250,8 +1250,8 @@ section.search .search-result {
   margin-bottom: -20px;
 }
 .firstbar .search {
-  margin-top: 20px;
-  margin-left: 55px;
+  margin-top: -20px;
+  /* margin-left: 55px; */
   padding:0
 }
 .firstbar .search .form-group {

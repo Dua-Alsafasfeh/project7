@@ -1,0 +1,22 @@
+.my-custom-scrollbar {
+    height: 2000px;
+    overflow: auto;
+  }
+
+  .sidebarr{
+    border:0.5px solid;
+    background-color:#EEEEEE;
+    border-radius:6px;
+  }
+  .inner div img {
+    width:19vw;
+  }
+
+  .imgedit{
+    width:292px;
+    border-radius:6px
+  }
+
+  .pad{
+    padding:10px
+  }

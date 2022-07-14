@@ -28,7 +28,6 @@ function Comment(){
   return (
     <>
     <div class="d-flex justify-content-center align-items-center float-lg-right mr-5">
-
       <div class="card p-5">
     <div style={styles.container}>
       <h2> Ratings us </h2>
@@ -43,7 +42,6 @@ function Comment(){
                 marginRight: 10,
                 cursor: "pointer"
               }}
-
               onClick={() => handleClick(index + 1)}
               color={(hoverValue || currentValue) > index ?colors.orange : colors.grey}
               onMouseOver={() => handleMouseOver(index + 1)}

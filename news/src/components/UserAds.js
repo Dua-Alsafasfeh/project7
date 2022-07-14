@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import "../style/userAds.css";
 
 
 class Ads extends Component {
@@ -27,21 +28,21 @@ class Ads extends Component {
   render() {
     return (
       <div class="my-custom-scrollbar my-custom-scrollbar-primary mb-5 mr-5">
-     <div class="mr-5">
+     <div>
         {this.state.items.map((ads) => {
           return(
             <div>
-            {/* <div class="sidebar-title for-tablet ">Sidebar</div> */}
+            <div class="sidebar-title for-tablet">Sidebar</div>
             <aside>
               <div class="aside-body">
-                <article class="article-mini">
+                <article class="sidebarr article-mini ">
                   <div class="inner">
-                    <div>
-                        <img class="radius" src={ads.img} alt="Sample Article"/>
+                    <div >
+                        <img src={ads.img} alt="Sample Article imgedit" />
                     </div>
-                    <div class="padding1">
+                    <div class='pad'>
                      
-                      <h5 class="text-center">{ads.Title}</h5>
+                      <h5 class="text-center" >{ads.Title}</h5>
                       <h1>Type :&nbsp;{ads.Type}</h1>
                       <small><strong>Phone Number </strong>:&nbsp; {ads.Phone}</small><br></br>
                       <small><strong> City</strong> :&nbsp; {ads.City}</small><br></br>

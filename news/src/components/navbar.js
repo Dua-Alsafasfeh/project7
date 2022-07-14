@@ -1,39 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowseRoute, Route, Routes, Link } from 'react-router-dom';
+import { Icon } from '@iconify/react';
 import '../style/navbar.css';
 
-function Navbar() {
+function Navbar(props) {
+
+    let user_id = props.user_id;
+
+    let userid = sessionStorage.getItem("user_id");
+    console.log(userid, 'nav');
+
+    let state = false;
+    console.log(state);
+
+    if (userid > 0) {
+        state = true;
+    }
+    else if (userid == null || userid == 0) {
+        state = false;
+    }
+
+    const [login, set_logged] = useState(state);
+
+    const logout = () => {
+        localStorage.removeItem('email');
+        localStorage.clear();
+        userid = 0;
+        sessionStorage.setItem("user_id", 0);
+        state = false;
+        set_logged(false);
+
+    }
     return (
         <>
             <nav className="menu">
-                <div className="container-fluid">
-                    {/* <div className="brand">
-                        <Link to="/Home"><a href="#">
-                            <img src="images/logo.png" alt="Magz Logo" />
-                        </a></Link>
-                        
-                    </div> */}
-                    {/* <div className="mobile-toggle">
-                        <a href="#" data-toggle="menu" data-target="#menu-list">
-                            <i className="ion-navicon-round" />
-                        </a>
-                    </div> */}
-                    {/* <div className="mobile-toggle">
-                        <a href="#" data-toggle="sidebar" data-target="#sidebar">
-                            <i className="ion-ios-arrow-left" />
-                        </a>
-                    </div> */}
+                <div className="container-fluid navbar-fixed-top " style={{ backgroundColor: 'white' }}>
                     <div id="m">
                         <ul className="nav-list">
-                            {/* <li className="for-tablet nav-title">
-                                <a>Menu</a>
-                            </li> */}
-                            {/* <li className="for-tablet">
-                                <a href="login.html">Login</a>
-                            </li>
-                            <li className="for-tablet">
-                                <a href="register.html">Register</a>
-                            </li> */}
+
                             <li>
                                 <span>
                                     <Link to="/Home">
@@ -58,7 +62,7 @@ function Navbar() {
                                     <a className='h4 font-weight-bold' href="category.html">Contact Us </a>
                                 </Link>
                             </li>
-                            <li className="dropdown magz-dropdown">
+                            {/* <li className="dropdown magz-dropdown">
                                 <a href="#">
                                     News <i className="ion-ios-arrow-right" />
                                 </a>
@@ -87,10 +91,10 @@ function Navbar() {
                                         </li>
                                     </Link>
                                 </ul>
-                            </li>
+                            </li> */}
                             <ul className="nav-icons" id="m1">
                                 <Link to='/Register' className='linkmenu'>
-                                    <li className='menutab' id="hideloginmenu" style={{display:""}}>
+                                    <li className='menutab' id="hideloginmenu" style={{ display: state ? 'none' : 'block' }}>
                                         <a className='h4 font-weight-bold' href="register.html">
                                             <span className="ion-person-add" />
                                             &nbsp;Register
@@ -98,81 +102,30 @@ function Navbar() {
                                     </li>
                                 </Link>
                                 <Link to='/Login' className='linkmenu'>
-                                    <li className='menutab' id="hideloginmenu" style={{display:""}}>
+                                    <li className='menutab' id="hideloginmenu" style={{ display: state ? 'none' : 'block' }}>
                                         <a className='h4 font-weight-bold' href="login.html">
                                             <i className="ion-person" />
                                             &nbsp;Login
                                         </a>
                                     </li>
                                 </Link>
-                                <li className="dropdown magz-dropdown" id="showloginmenu" style={{display:""}}>
-                                    <a href="#" className='font-weight-bold'>
-                                        User Name <i className="ion-ios-arrow-right" />
-                                    </a>
-                                    <ul className="dropdown-menu">
-                                        <li>
-                                        <Link to="/MyAccount">
-                                            <a href="#">
-                                                <i className="icon ion-person" /> My Adds
-                                            </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/">
-                                            <a href="#">
-                                                <i className="icon ion-log-out" /> Logout
-                                            </a>
-                                            </Link>
-                                        </li>
-                                    </ul>
+                                <li className="dropdown magz-dropdown">
+                                    <Link to="/MyAccount">
+                                        <a className='h4 font-weight-bold' href="category.html" style={{ display: state ? 'block' : 'none' }} > <Icon icon="material-symbols:sell-sharp" />&nbsp;My Ads
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className="dropdown magz-dropdown">
+                                    <Link to="/Login">
+                                        <a className='h4 font-weight-bold' href="category.html" style={{ display: state ? 'block' : 'none' }} onClick={logout}><Icon icon="humbleicons:logout" width='25' /> &nbsp;Logout</a>
+                                    </Link>
                                 </li>
                             </ul>
                         </ul>
                     </div>
                 </div>
             </nav>
-            {/* ////////////////////small categories//////////// */}
-            {/* <div className="firstbar">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-2 col-sm-12"></div>
-                        <div className="col-md-7 col-sm-12 ">
-                            <form className="search" autoComplete="off">
-                                <div className="form-group">
-                                    <div className="input-group">
-                                        <input
-                                            type="text"
-                                            name="q"
-                                            className="form-control"
-                                            placeholder="Type something here"
-                                        />
-                                        <div className="input-group-btn">
-                                            <button className="btn btn-primary">
-                                                <i className="ion-search" />
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="help-block">
-                                    <div>Popular:</div>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Business ,</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Sport ,</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Financial </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
+        <hr className='mt-1'/>
         </>
     )
 }

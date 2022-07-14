@@ -112,7 +112,6 @@ function Login() {
                                             </a> */}
 
                                     </label>
-                                    <br/>
                                     <input type="password"
                                         name="pass"
                                         onChange={passHandel}

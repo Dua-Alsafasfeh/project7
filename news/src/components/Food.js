@@ -37,7 +37,7 @@ function Food() {
   };
 
   return (
-<div className="container">
+<div className="container" >
 
 
 
@@ -68,11 +68,8 @@ function Food() {
 </div>
 </div>
 </form>
-<div className="row container">
-        
+<div className="row container">     
         {recipes !== [] && recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe} />)}
-   
-
 </div>
 </div>
 
