@@ -32,6 +32,7 @@ function Userpro() {
          event.preventDefault();  
          axios.post('http://localhost/project7/php_crud/insert.php?&Title='+Title+'&Type='+Type+'&City='+City+'&Phone='+Phone+'&Des='+Des+'&img='+img+'&Date_Res='+Date_Res+'&CardNum='+CardNum+'&Expiry='+Expiry+'&CVV='+CVV)
         .then((data) => {
+            alert("your Ads have been added successfully!")
         })
         .catch((error) => {
             console.error(error);
@@ -134,7 +135,7 @@ function Userpro() {
                 <div class="col-12">
                     <div class="d-flex flex-column">
                         <p class="text mb-1">Person Name</p>
-                        <input class="form-control mb-3" type="text" placeholder="Name"  value="Barry Allen"/>
+                        <input class="form-control mb-3" type="text" placeholder="Name" />
                     </div>
                 </div>
                 <div class="col-12">

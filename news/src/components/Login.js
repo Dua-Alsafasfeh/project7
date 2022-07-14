@@ -32,6 +32,8 @@ function Login() {
 
     const handelLog = (event) => {
         event.preventDefault();
+        // document.getElementById('showloginmenu').style.display = "block";
+        // document.getElementById('hideloginmenu').style.display = "none";
 
         // const newe =()=>{
 
@@ -54,7 +56,7 @@ function Login() {
                 console.log(el.id, 'bahaa');
 
                 sessionStorage.setItem("user_id", el.id);
-                let ide = sessionStorage.getItem("user_id"); //// raghad here where i store data
+                let ide = sessionStorage.getItem("user_id"); //// here where i store data
                 console.log("heh" + ide);
                 // console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"', 'yas');
                 // let id_user= el.id;
@@ -65,8 +67,7 @@ function Login() {
                 // setUserId(el.id)
                 // setLogin(true)
                 // console.log(id_user);
-                document.getElementById('showloginmenu').style.display = "block";
-                document.getElementById('hideloginmenu').style.display = "none";
+                
                 window.location.href = "/";
                 
                 

@@ -31,7 +31,7 @@ class Ads extends Component {
         {this.state.items.map((ads) => {
           return(
             <div>
-            <div class="sidebar-title for-tablet ">Sidebar</div>
+            {/* <div class="sidebar-title for-tablet ">Sidebar</div> */}
             <aside>
               <div class="aside-body">
                 <article class="article-mini">

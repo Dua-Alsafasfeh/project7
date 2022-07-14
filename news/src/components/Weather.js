@@ -49,7 +49,7 @@ function Weather() {
                                             <span key={index}>
                                             <span className="iconify-inline weathericon" data-icon="fluent:weather-cloudy-48-regular"/>
                                             {" "}
-                                                {item.datetime}{" | "}
+                                                {/* {item.datetime}{" | "} */}
                                                 {item.datetime} {" | "}
                                                 {item.conditions} {" | "}
                                                 {item.tempmin}°C / {item.tempmax}°C
