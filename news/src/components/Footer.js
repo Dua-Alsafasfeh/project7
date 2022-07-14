@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="row pb-4">
+        <div className="row">
           <div className="col-md-4 col-sm-12 col-xs-12">
             <div className="block">
               {/* <h1 className="block-title">Company Info</h1> */}
@@ -13,15 +13,10 @@ function Footer() {
                 <figure className="foot-logo">
                   <img
                     src="images/footerlogo.png"
-                    className="img-responsive"
+                    className="img-responsive mt-5"
                     alt="Logo"
                   />
                 </figure>
-                <p className="brand-description">
-                  Global New includes the most important daily,, weekly, and monthly
-                  news, exclusive and urgent news, in addition to containing many
-                  sections, which attracts the user’s interest and meets his needs.
-                </p>
               </div>
             </div>
           </div>
@@ -31,7 +26,7 @@ function Footer() {
                 Pages
                 <div className="right" />
               </h1>
-              <div className="block-body ">
+              <div className="block-body mt-5">
                 <Link to="/Home">
                   <a href="page.html" className="btn btn-magz white">
                     Home <i className="ion-ios-arrow-thin-right" />
