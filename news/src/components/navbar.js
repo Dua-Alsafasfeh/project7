@@ -62,36 +62,7 @@ function Navbar(props) {
                                     <a className='h4 font-weight-bold' href="category.html">Contact Us </a>
                                 </Link>
                             </li>
-                            {/* <li className="dropdown magz-dropdown">
-                                <a href="#">
-                                    News <i className="ion-ios-arrow-right" />
-                                </a>
-                                <ul className="dropdown-menu">
-                                    <li>
-                                        <a href="category.html" />
-                                    </li>
-                                    <Link to="/Business" className='linkdrop'>
-                                        <li className="dropdown magz-dropdown">
-                                            <a href="category.html">Business</a>
-                                        </li>
-                                    </Link>
-                                    <Link to="/Sport" className='linkdrop'>
-                                        <li>
-                                            <a href="category.html">Sport</a>
-                                        </li>
-                                    </Link>
-                                    <Link to="/health" className='linkdrop'>
-                                        <li>
-                                            <a href="category.html">Health</a>
-                                        </li>
-                                    </Link>
-                                    <Link to="/tech" className='linkdrop'>
-                                        <li>
-                                            <a href="category.html">Technology</a>
-                                        </li>
-                                    </Link>
-                                </ul>
-                            </li> */}
+
                             <ul className="nav-icons" id="m1">
                                 <Link to='/Register' className='linkmenu'>
                                     <li className='menutab' id="hideloginmenu" style={{ display: state ? 'none' : 'block' }}>

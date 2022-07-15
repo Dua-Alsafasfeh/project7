@@ -1,16 +1,14 @@
 .regstyle{
-    margin-top:-35%;
-    width: 65%;
-    margin-left: 7%;
+    /* margin-top:35%; */
+    width: 100%;
+    
+}
+.registerform , .loginform{
+    width: 50%;
+    margin: auto;
+}
+.regbg , .logbg{
     background-image: url('https://images.pexels.com/photos/355935/pexels-photo-355935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-repeat: no-repeat;
     background-size: cover;
-}
-.reg{
-    width: 30vw;
-    margin-top: 30%;
-    margin-left: -20%;
-}
-#register{
-    margin-top: -35%;
 }

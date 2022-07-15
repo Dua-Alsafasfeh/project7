@@ -4,6 +4,7 @@ import { BrowseRoute, Route, Routes, Link } from 'react-router-dom';
 import '../style/register.css';
 import React, { Component } from 'react';
 import axios from 'axios';
+import Ads from "./UserAds";
 
 
 const regExp = RegExp(
@@ -127,88 +128,97 @@ export default class UserForm extends Component {
 
 
     return (
-      <div className="regstyle">
-      <section className="login first grey">
-        <div className="container">
-          <div className="box-wrapper">
-            <div className="box box-border">
-              <div className="box-body">
-                <h4>Register</h4>
-                <form id='regForm' className="d" onSubmit={this.onSubmit} noValidate>
-                  <div className="form-group">
-                    <label>Name</label>
-                    <br/>
-                    <input type="text"
-                      className={isError.name.length > 0 ? "is-invalid " : ""}
-                      name="name"
-                      onChange={this.formValChange}
-                    />
-                    {isError.name.length > 0 && (
-                      <span className="invalid-feedback">{isError.name}</span>
-                    )}
-                  </div>
+      <>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-md-9 col-sm-9  regbg'>
+              <div className="regstyle">
+                <section className="login first grey">
+                    <div className="registerform">
+                      <div className="box box-border mt-5">
+                        <div className="box-body">
+                          <h4>Register</h4>
+                          <form id='regForm' className="d" onSubmit={this.onSubmit} noValidate>
+                            <div className="form-group">
+                              <label>Name</label>
+                              <br />
+                              <input type="text"
+                                className={isError.name.length > 0 ? "is-invalid " : ""}
+                                name="name"
+                                onChange={this.formValChange}
+                              />
+                              {isError.name.length > 0 && (
+                                <span className="invalid-feedback">{isError.name}</span>
+                              )}
+                            </div>
 
 
-                  <div className="form-group">
-                    <label>Email</label>
-                    <br/>
-                    <input type="email"
-                      className={isError.email.length > 0 ? "is-invalid " : ""}
-                      name="email"
-                      onChange={this.formValChange}
-                    />
-                    {isError.email.length > 0 && (
-                      <span className="invalid-feedback">{isError.email}</span>
-                    )}
-                  </div>
+                            <div className="form-group">
+                              <label>Email</label>
+                              <br />
+                              <input type="email"
+                                className={isError.email.length > 0 ? "is-invalid " : ""}
+                                name="email"
+                                onChange={this.formValChange}
+                              />
+                              {isError.email.length > 0 && (
+                                <span className="invalid-feedback">{isError.email}</span>
+                              )}
+                            </div>
 
 
-                  <div className="form-group">
-                    <label>Phone</label>
-                    <br/>
-                    <input type="number"
-                      className={isError.phone.length > 0 ? "is-invalid " : ""}
-                      name="phone"
-                      onChange={this.formValChange}
-                    />
-                    {isError.phone.length > 0 && (
-                      <span className="invalid-feedback">{isError.phone}</span>
+                            <div className="form-group">
+                              <label>Phone</label>
+                              <br />
+                              <input type="number"
+                                className={isError.phone.length > 0 ? "is-invalid " : ""}
+                                name="phone"
+                                onChange={this.formValChange}
+                              />
+                              {isError.phone.length > 0 && (
+                                <span className="invalid-feedback">{isError.phone}</span>
 
-                    )}
-                  </div>
-
-
-                  <div className="form-group">
-                    <label className="fw">Password</label>
-                    <br/>
-                    <input type="password"
-                      className={isError.pass.length > 0 ? "is-invalid " : ""}
-                      name="pass"
-                      onChange={this.formValChange}
-                    />
-                    {isError.pass.length > 0 && (
-                      <span className="invalid-feedback">{isError.pass}</span>
-                    )}
-                  </div>
+                              )}
+                            </div>
 
 
-                  <div className="form-group text-right">
-                    <button type="submit" className="btn btn-block btn-primary">Sign Up </button>
-                  </div>
+                            <div className="form-group">
+                              <label className="fw">Password</label>
+                              <br />
+                              <input type="password"
+                                className={isError.pass.length > 0 ? "is-invalid " : ""}
+                                name="pass"
+                                onChange={this.formValChange}
+                              />
+                              {isError.pass.length > 0 && (
+                                <span className="invalid-feedback">{isError.pass}</span>
+                              )}
+                            </div>
 
-                  <div className="form-group text-center">
-                    <span className="text-muted">Already have an account?</span>{" "}
-                    <Link to="/Login">
-                    <a href="login.html">Login</a>
-                    </Link>
-                  </div>
-                </form>
+
+                            <div className="form-group text-right">
+                              <button type="submit" className="btn btn-block btn-primary">Sign Up </button>
+                            </div>
+
+                            <div className="form-group text-center">
+                              <span className="text-muted">Already have an account?</span>{" "}
+                              <Link to="/Login">
+                                <a href="login.html">Login</a>
+                              </Link>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                </section>
               </div>
+            </div>
+            <div className='col-md-3 col-sm-3 '>
+              <Ads />
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </>
 
     )
   }

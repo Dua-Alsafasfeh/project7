@@ -1,5 +1,5 @@
 .my-custom-scrollbar {
-    height: 2000px;
+    height: 75vh;
     overflow: auto;
   }
 
@@ -9,14 +9,10 @@
     border-radius:6px;
   }
   .inner div img {
-    width:19vw;
+    width:100%;
   }
 
   .imgedit{
-    width:292px;
-    border-radius:6px
-  }
-
-  .pad{
-    padding:10px
+    width:100%;
+    border-radius:6px;
   }

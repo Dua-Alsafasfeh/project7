@@ -11,7 +11,7 @@ function Weather() {
 
     useEffect(() => {
         const loadweather = async () => {
-            const response = await axios.get("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/jordan?unitGroup=uk&key=BU2Q48AQMNDLLBQPYB472B393&contentType=json");
+            const response = await axios.get("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/jordan?unitGroup=us&key=FXAR8MYAGH9EWGB4JU4BM6CVD&contentType=json");
 
             setweather(response.data.days);
         };
@@ -24,14 +24,14 @@ function Weather() {
     return (
         <>
         <div className="weatherstyle">
-            <div className="container mt-5">
-                <div className="row">
-                    <div className="col-md-4">
+            {/* <div className="container mt-5"> */}
+                {/* <div className="row"> */}
+                    {/* <div className="col-md-4"> */}
                         <div
                             className="d-flex justify-content-between align-items-center breaking-news "
                             style={{ backgroundColor: "#21325E", color: "aliceblue", fontSize: "1.5em" }}
                         >
-                            <div className="d-flex flex-row flex-grow-1 flex-fill justify-content-center py-2 text-white px-1 news">
+                            <div className="d-flex flex-row flex-grow-1 flex-fill justify-content-center py-2 text-white news">
                             <div className="weatherimg"><span className="d-flex align-items-center">&nbsp;</span>
                                 </div>
                                 
@@ -61,9 +61,9 @@ function Weather() {
                             </marquee>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                {/* </div> */}
+            {/* </div> */}
+        {/* </div> */}
         <br/>
         </>
     )

@@ -14,7 +14,7 @@ function BreakingNews() {
 
     useEffect(() => {
         const loadbreakingnews = async () => {
-            const response = await axios.get("https://newsapi.org/v2/everything?domains=wsj.com&apiKey=d8a14f5d0a7d45f395a26e95e34050b0 ");
+            const response = await axios.get("https://newsapi.org/v2/everything?domains=wsj.com&apiKey=94b41df1b4c346be9b6113a3a84450ae ");
 
             setbreakingnews(response.data.articles);
         };
@@ -25,7 +25,7 @@ function BreakingNews() {
     console.log('breakingnews', breakingnews);
     return (
         <>
-        <div className="container" style={{ width: '60%', margintop: '20em' }}>
+        <div className="container" style={{ width: '100%', margintop: '20em' }}>
             <Carousel fade={true} pause={false} className="slide">
                 {breakingnews && breakingnews.map((item, index) => {
                     return (

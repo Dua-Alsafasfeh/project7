@@ -9,7 +9,7 @@ function Footer() {
           <div className="col-md-4 col-sm-12 col-xs-12">
             <div className="block">
               {/* <h1 className="block-title">Company Info</h1> */}
-              <div className="block-body">
+              <div className="block-body mt-3">
                 <figure className="foot-logo">
                   <img
                     src="images/footerlogo.png"
@@ -17,11 +17,11 @@ function Footer() {
                     alt="Logo"
                   />
                 </figure>
-                <p className="brand-description">
+                {/* <p className="brand-description">
                   Global New includes the most important daily,, weekly, and monthly
                   news, exclusive and urgent news, in addition to containing many
                   sections, which attracts the user’s interest and meets his needs.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -99,7 +99,6 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="line" />
           </div>
         </div>
         <div className="row">

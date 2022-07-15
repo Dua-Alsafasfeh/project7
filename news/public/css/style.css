@@ -1658,7 +1658,7 @@ article footer .btn-primary:focus {
   }
 }
 .best-of-the-week {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .best-of-the-week h1 {
   font-size: 16px;
@@ -2414,8 +2414,8 @@ section .container {
 aside {
   margin-bottom: 40px;
   display: inline-block;
-  width: 20%;
-  margin-left: 80%;
+  width: 100%;
+  /* margin-left: 80%; */
 }
 aside:last-child {
   margin-bottom: 0;
@@ -3599,7 +3599,7 @@ blockquote {
   margin-left: -5%;
 }
 .page .breadcrumb {
-  margin-top: -224%;
+  /* margin-top: -224%; */
 }
 .page .page-title {
   margin: 0;

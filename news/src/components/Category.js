@@ -1,14 +1,13 @@
 import React from 'react';
 import { BrowseRoute, Route, Routes, Link } from 'react-router-dom';
-import '../style/category.css';
 function Category() {
     return (
         <>
-            <div className='catecontainer'>
-                <div className="linestyle line container">
+            
+                <div className="line container">
                     <div>Today News</div>
                 </div>
-                <div className="row container catestyle">
+                <div className="row container">
                     <div className="col-md-6 col-sm-6 col-xs-12">
                         <div className="row">
                             <article className="article col-md-12">
@@ -67,7 +66,7 @@ function Category() {
                                             </a>
                                         </h2>
                                         <p>
-                                            Sports journalism is a form of writing that reports on matters pertaining to sporting topics and competitions. Sports journalism started in the early 1800s when it was targeted to the social elite and transitioned into an integral part of the news business with newspapers having dedicated sports sections.
+                                            Sports journalism is a form of writing that reports on matters pertaining to sporting topics and competitions.It started in the early 1800s when it was targeted to the social elite and transitioned into an integral part of the news business with newspapers having dedicated sports sections.
                                         </p>
                                         <footer className='m-3'>
                                             <Link to="/Sport">
@@ -108,7 +107,7 @@ function Category() {
                                             </a>
                                         </h2>
                                         <p>
-                                            Health journalism is the dissemination of medical and health information and related subjects in the media. The heterogeneous domains of health journalism are reporting of health news, medical research and its publication, and health policies, programs, and their criticisms involving both print and digital media.
+                                            Health journalism is the dissemination of medical and health information and related subjects in the media. The heterogeneous domains of it are reporting of health news, medical research and its publication, and health policies,and their criticisms involving both print and digital media.
                                         </p>
                                         <footer className='m-3'>
                                             <Link to="/Health">
@@ -163,7 +162,6 @@ function Category() {
                         </div>
                     </div>
                 </div>
-            </div>
         </>
     )
 }

@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {Card,Button} from 'antd';
 import axios from 'axios';
-import '../style/topnews.css';
 
 
 const {Meta} = Card;
@@ -13,7 +12,7 @@ function TopNews(){
 
     useEffect(() => {
         const loadtopnews = async () => {
-        const response = await axios.get("https://newsapi.org/v2/everything?domains=wsj.com&apiKey=d8a14f5d0a7d45f395a26e95e34050b0");
+        const response = await axios.get("https://newsapi.org/v2/everything?domains=wsj.com&apiKey=94b41df1b4c346be9b6113a3a84450ae");
 
         settopnews(response.data.articles);
     };
@@ -24,10 +23,10 @@ function TopNews(){
 console.log('topnews', topnews);
 
   return (
-    <div className="mb-5 topstyle">
-                   <div className="container">
-                        <div className="row">
-                            <div className="col-md-11">
+    <div className=" topstyle">
+                   {/* <div className="container"> */}
+                        {/* <div className="row"> */}
+                            {/* <div className="col-md-11"> */}
                                 <div
                                     className="d-flex justify-content-between align-items-center breaking-news "
                                     style={{ backgroundColor: "#252e38", color: "aliceblue", fontSize: "1.5em" }}
@@ -57,9 +56,9 @@ console.log('topnews', topnews);
                                         })}
                                     </marquee>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            {/* </div> */}
+                        {/* </div> */}
+                    {/* </div> */}
     </div>
   )
 }

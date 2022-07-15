@@ -5,6 +5,7 @@ import { BrowseRoute, Route, Routes, Link } from 'react-router-dom';
 import '../style/register.css';
 import React, { Component, useState, useEffect } from "react";
 import axios from 'axios';
+import Ads from './UserAds';
 
 
 
@@ -85,11 +86,14 @@ function Login() {
     //   console.log(id,"before render" );
 
     return (
-        <div className='regstyle'>
+            <>
+            <div className='container'>
+            <div className='row'>
+            <div className='col-md-9 col-sm-9 logbg'>
+            <div className='regstyle'>
         <section className="login first grey">
-            <div className="container">
-                <div className="box-wrapper">
-                    <div className="box box-border">
+                <div className="loginform">
+                    <div className="box box-border mt-5">
                         <div className="box-body">
                             <h4>Login</h4>
                             <form id='regForm' className="d" noValidate>
@@ -140,9 +144,18 @@ function Login() {
                         </div>
                     </div>
                 </div>
-            </div>
+           
         </section>
     </div>
+            </div>
+            <div className='col-md-3 col-sm-3 '>
+                <Ads/>
+            </div>
+            </div>
+            
+        </div>
+            </>
+
 
     )
 }

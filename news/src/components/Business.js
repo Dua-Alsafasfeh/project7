@@ -1,7 +1,8 @@
-import '../style/cateapi.css';
+
 import React, { useState, useEffect } from "react";
 import { Card, Button } from 'antd';
 import axios from 'axios';
+import Ads from './UserAds';
 const { Meta } = Card;
 
 
@@ -12,7 +13,7 @@ function Business() {
 
     useEffect(() => {
         const loadbusiness = async () => {
-            const response = await axios.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d8a14f5d0a7d45f395a26e95e34050b0  ");
+            const response = await axios.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=94b41df1b4c346be9b6113a3a84450ae  ");
 
             setbusiness(response.data.articles);
         };
@@ -22,7 +23,11 @@ function Business() {
     console.log('business', business);
     return (
 
-        <div className="container business" style={{ width: '60%' }}>
+        <>
+        <div className='container-fluid'>
+            <div className='row'>
+            <div className='col-md-9 col-sm-9 '>
+                <div className="container business" style={{ width: '80%' }}>
             <div class="line top">
                 <div>Business News</div>
             </div>
@@ -83,6 +88,16 @@ function Business() {
 
             })}
         </div>
+            </div>
+            <div className='col-md-3 col-sm-3 '>
+                <Ads/>
+            </div>
+            </div>
+            
+        </div>
+        </>
+
+        
     )
 }
 export default Business;

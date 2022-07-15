@@ -1,7 +1,10 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import '../style/contact.css';
-
+import Comment from './Comment';
+// import { Rate } from 'antd';
+import Rate from './Rate';
+import Ads from './UserAds';
 
 
 
@@ -28,74 +31,90 @@ const Contact = () => {
 
   return (
     <>
-
-      <div className='contactstyle'>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-10 top">
-
-              <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li class="active">Contact Us</li>
-              </ol>
-               <div id="alert" className="alert alert-success" role="alert" style={{ display: 'none' }}>
-              <p class="alert-heading">Thank you For Contacting Us</p>
-            </div>
-              <h1 class="page-title">Contact Us</h1>
-              <p class="page-subtitle">We hear you</p>
-              <div class="line thin"></div>
-              <div class="page-description">
+      <div className='container-fluid'>
+        <div className='row'>
+          <div className='col-md-9 col-sm-9 '>
+            <div className='contactstyle '>
+              <div class="container">
                 <div class="row">
-                  <div class="col-md-6 col-sm-6">
-                    <h3>Contact</h3>
-                    <p>
-                      Please feel free to contact us if you have any enquiry, via telephone, email or by filling out the enquiry form below.
-                    </p>
-                    <p>
-                      Phone: <span class="bold">+962771567829</span> <br />
-                      Email: <span class="bold">globalnews@gamil.com</span>
-                      <br />
-                      <br />
-                      Salah Aldeen Street<br />
-                      Jordan, Aqaba
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-8 col-sm-6">
+                  <div class="col-md-10 col-md-offset-2">
 
-
-                    <form class="row contact" id="contact-form" ref={form} onSubmit={sendEmail}>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Name <span class="required"></span></label>
-                          <input type="text" class="form-control" name="user_name" required />
+                    <ol class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li class="active">Contact Us</li>
+                    </ol>
+                    <div id="alert" className="alert alert-success" role="alert" style={{ display: 'none' }}>
+                      <p class="alert-heading">Thank you For Contacting Us</p>
+                    </div>
+                    <h1 class="page-title">Contact Us</h1>
+                    <p class="page-subtitle">We hear you</p>
+                    <div class="line thin"></div>
+                    <div class="page-description">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                          <h3>Contact</h3>
+                          <p>
+                            Please feel free to contact us if you have any enquiry, via telephone, email or by filling out the enquiry form below.
+                          </p>
+                          <p>
+                            Phone: <span class="bold">+962771567829</span> <br />
+                            Email: <span class="bold">globalnews@gamil.com</span>
+                            <br />
+                            <br />
+                            Salah Aldeen Street<br />
+                            Jordan, Aqaba
+                          </p>
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Email <span class="required"></span></label>
-                          <input type="email" class="form-control" name="user_email" required />
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Your message <span class="required"></span></label>
-                          <textarea class="form-control" name="message" required></textarea>
-                        </div>
-                      </div>
+                      <div class="row">
+                        <div class="col-md-8 col-sm-6">
 
-                      <div class="col-md-12">
-                        <button class="btn btn-primary" type='submit' value="send">Send Message</button>
+
+                          <form class="row contact" id="contact-form" ref={form} onSubmit={sendEmail}>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Name <span class="required"></span></label>
+                                <input type="text" class="form-control" name="user_name" required />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Email <span class="required"></span></label>
+                                <input type="email" class="form-control" name="user_email" required />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label>Your message <span class="required"></span></label>
+                                <textarea class="form-control" name="message" required></textarea>
+                              </div>
+                            </div>
+
+                            <div class="col-md-12">
+                              <button class="btn btn-primary" type='submit' value="send">Send Message</button>
+                            </div>
+                          </form>
+                        </div>
                       </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
+          </div>
+          <div className='col-md-3 col-sm-3 '>
+              <Ads/>
+          </div>
+        </div>
+        <hr/>
+        <div className='row mt-5'>
+          <div className='col-md-12 col-sm-12'>
+        <Rate />
           </div>
         </div>
       </div>
+      
     </>
   )
 }

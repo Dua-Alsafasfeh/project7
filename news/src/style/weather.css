@@ -1,21 +1,18 @@
 .weatherstyle{
-    margin-left: 73%;
-    /* margin-top:5% ; */ 
-    margin-bottom: 3%;
+    border: 1px solid white ;
+    border-radius: 10px;
 }
 .weatherimg {
-	width: calc(120px - 15px);
+	width: calc(100px - 15px);
 	display: flex;
 	background-size: cover;
-	border-radius: 10px;
+	border-radius: 5px;
 	overflow: hidden;
     background-image: url('https://images.pexels.com/photos/479333/pexels-photo-479333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    padding: 22%;
+    padding: 20%;
 }
-.news{
-    background-color: #5495f7;
-}
+
 .weathericon{
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     color: white;
 }
